@@ -41,24 +41,37 @@ var getComputerChoice =options [Math.floor(Math.random() *options.length)];
 // Write a function that plays a single round of RPS. Two parameters:
 // playerSelection and computerSelection
 function playRound(playerSelection, computerSelection) {
-// // return a string that declares the winner of the round
+
+    // // return a string that declares the winner of the round
     // code return choices
 //  IF "It's a tie!" return (playerSelection===computerSelection)"
-
+    if (playerSelection===computerSelection) {
+        return "It's a tie! You both picked ${playerSelection}";
+    
 //IF"You Win!"returns:
 //IFplayer selects rock RETURN
-
+    } else if (playerSelection==="rock" && computerSelection==="Scissors") {
+        return "You win! Rock beats Scissors!";
 // ELSE IF player selects paper RETURN
+} else if (playerSelection==="paper" && computerSelection==="Rock") {
+    return "You win! Paper beats Rock!";
 // ELSE IF player selects scissors RETURN
+} else if (playerSelection==="scissors" && computerSelection==="Paper"){
+    return "You win! Scissors beats Paper!";
 
-//ELSE"You lose!" RETURN:
+
+//ELSE"You lose!" RETURN: 
+} else {
+    return "You lose! ${computerSelection} beats ${playerSelection}!";
+}
 
 
 }
 // make sure selections aren't case sensative (userSelection.toLowerCase)
  
+// make selection constants:
 
+const playerSelection = prompt ("Start the game: pick 'Rock', 'Paper', or 'Scissors' ").toLowerCase();
+const computerSelection= getComputerChoice;
 
-
-console.log(getComputerChoice);
-alert (" Computer picks " + getComputerChoice);
+console.log(playRound(playerSelection, computerSelection));
