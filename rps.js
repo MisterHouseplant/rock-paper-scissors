@@ -31,5 +31,12 @@
 //---If 
 
 
-console.log("Hello");
-alert ("HELLO!");
+
+
+// write getComputerChoice function //
+
+var options = ["Rock"," Paper", "Scissors"];
+var getComputerChoice =options [Math.floor(Math.random() *options.length)];
+
+console.log(getComputerChoice);
+alert (getComputerChoice);
