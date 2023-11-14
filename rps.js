@@ -33,10 +33,32 @@
 
 
 
-// write getComputerChoice function //
+// Write getComputerChoice function //
 
 var options = ["Rock"," Paper", "Scissors"];
 var getComputerChoice =options [Math.floor(Math.random() *options.length)];
 
+// Write a function that plays a single round of RPS. Two parameters:
+// playerSelection and computerSelection
+function playRound(playerSelection, computerSelection) {
+// // return a string that declares the winner of the round
+    // code return choices
+//  IF "It's a tie!" return (playerSelection===computerSelection)"
+
+//IF"You Win!"returns:
+//IFplayer selects rock RETURN
+
+// ELSE IF player selects paper RETURN
+// ELSE IF player selects scissors RETURN
+
+//ELSE"You lose!" RETURN:
+
+
+}
+// make sure selections aren't case sensative (userSelection.toLowerCase)
+ 
+
+
+
 console.log(getComputerChoice);
-alert (getComputerChoice);
+alert (" Computer picks " + getComputerChoice);
