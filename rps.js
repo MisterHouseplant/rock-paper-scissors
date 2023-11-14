@@ -37,7 +37,7 @@
 
 function  getComputerChoice (){
 // make an array
-    const pick=["Rock", "Paper", "Scissors"];
+    const pick=["rock", "paper", "scissors"];
 //return random 
     return pick [Math.floor(Math.random () *pick.length)];
 }
@@ -49,23 +49,23 @@ function playRound(playerSelection, computerSelection) {
     // code return choices
 //  IF "It's a tie!" return (playerSelection===computerSelection)"
     if (playerSelection===computerSelection) {
-        return "It's a tie! You both picked ${playerSelection}";
+        return "It's a tie! You both picked " +playerSelection+".";
     
 //IF"You Win!"returns:
 //IFplayer selects rock RETURN
-    } else if (playerSelection==="rock" && computerSelection==="Scissors") {
+    } else if (playerSelection==="rock" && computerSelection==="scissors") {
         return "You win! Rock beats Scissors!";
 // ELSE IF player selects paper RETURN
-} else if (playerSelection==="paper" && computerSelection==="Rock") {
+} else if (playerSelection==="paper" && computerSelection==="rock") {
     return "You win! Paper beats Rock!";
 // ELSE IF player selects scissors RETURN
-} else if (playerSelection==="scissors" && computerSelection==="Paper"){
+} else if (playerSelection==="scissors" && computerSelection==="paper"){
     return "You win! Scissors beats Paper!";
 
 
 //ELSE"You lose!" RETURN: 
 } else {
-    return "You lose! ${computerSelection} beats ${playerSelection}!";
+    return "You lose! "+computerSelection +" beats "+playerSelection+".";
 }
 
 
