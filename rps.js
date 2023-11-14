@@ -35,9 +35,12 @@
 
 // Write getComputerChoice function //
 
-var options = ["Rock"," Paper", "Scissors"];
-var getComputerChoice =options [Math.floor(Math.random() *options.length)];
-
+function  getComputerChoice (){
+// make an array
+    const pick=["Rock", "Paper", "Scissors"];
+//return random 
+    return pick [Math.floor(Math.random () *pick.length)];
+}
 // Write a function that plays a single round of RPS. Two parameters:
 // playerSelection and computerSelection
 function playRound(playerSelection, computerSelection) {
@@ -72,6 +75,6 @@ function playRound(playerSelection, computerSelection) {
 // make selection constants:
 
 const playerSelection = prompt ("Start the game: pick 'Rock', 'Paper', or 'Scissors' ").toLowerCase();
-const computerSelection= getComputerChoice;
+const computerSelection= getComputerChoice( );
 
 console.log(playRound(playerSelection, computerSelection));
