@@ -37,7 +37,7 @@
 
 function  getComputerChoice (){
 // make an array
-    const pick=["rock", "paper", "scissors"];
+    const pick=["ROCK", "PAPER", "SCISSORS"];
 //return random 
     return pick [Math.floor(Math.random () *pick.length)];
 }
@@ -53,19 +53,19 @@ function playRound(playerSelection, computerSelection) {
     
 //IF"You Win!"returns:
 //IFplayer selects rock RETURN
-    } else if (playerSelection==="rock" && computerSelection==="scissors") {
-        return "You win! Rock beats Scissors!";
+    } else if (playerSelection==="ROCK" && computerSelection==="SCISSORS") {
+        return "You win! ROCK beats SCISSORS!";
 // ELSE IF player selects paper RETURN
-} else if (playerSelection==="paper" && computerSelection==="rock") {
-    return "You win! Paper beats Rock!";
+} else if (playerSelection==="PAPER" && computerSelection==="ROCK") {
+    return "You win! PAPER beats ROCK!";
 // ELSE IF player selects scissors RETURN
-} else if (playerSelection==="scissors" && computerSelection==="paper"){
-    return "You win! Scissors beats Paper!";
+} else if (playerSelection==="SCISSORS" && computerSelection==="PAPER"){
+    return "You win! SCISSORS beats PAPER";
 
 
 //ELSE"You lose!" RETURN: 
 } else {
-    return "You lose! "+computerSelection +" beats "+playerSelection+".";
+    return "You lose! "+computerSelection+" beats "+playerSelection+".";
 }
 
 
@@ -74,7 +74,8 @@ function playRound(playerSelection, computerSelection) {
  
 // make selection constants:
 
-const playerSelection = prompt ("Start the game: pick 'Rock', 'Paper', or 'Scissors' ").toLowerCase();
+const playerSelection = prompt ("Start the game: pick 'Rock', 'Paper', or 'Scissors' ").toUpperCase();
 const computerSelection= getComputerChoice( );
 
 console.log(playRound(playerSelection, computerSelection));
+alert (playRound(playerSelection, computerSelection));
