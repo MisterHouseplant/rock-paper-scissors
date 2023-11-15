@@ -13,9 +13,31 @@
 //     -code so it is case insensitive
 //3.Computer/script answers randomly, rock, paper, scissors.
 //4. Return a string declaring the winner. 
-//---If 
+//---
+//Write a new function called game()
+//Use the previous function inside game() to make a 5 round
+//game that keeps score and reports the winner and loser
+//at the end. (I'm going to attempt to use a loop even though
+//I haven't really learned how to use them yet. 
+// game (){
+//      make loop for round 1-5
+//                 use  playRound function
+//                   write a keepScore function based on RETURN  round winner
+//                (boolean maybe? If player wins gets 1, if player
+//                 looses, get 0, if player gets 3 or more 1 or trues, player wins
+//                  make if  and if/else statements. Make one for a tie as well
+//                   both player and comp get a point? or get 0? 
+
+//            After round 5 , announce winner and loser. 
+
+// }
+
+//------------------------------------------------------------------------------------
+function game(){
+//make roundLoop
 
 
+let 
 
 
 // Write getComputerChoice function //
@@ -64,3 +86,6 @@ const computerSelection= getComputerChoice( );
 
 console.log(playRound(playerSelection, computerSelection));
 alert (playRound(playerSelection, computerSelection));
+
+
+}
